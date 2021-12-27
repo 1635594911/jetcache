@@ -17,10 +17,10 @@ import org.springframework.context.ConfigurableApplicationContext;
 @EnableCreateCacheAnnotation
 public class SpringBootApp {
 
-    public static void main(String[] args) {
-        ConfigurableApplicationContext context = SpringApplication.run(SpringBootApp.class);
-        MyService myService = context.getBean(MyService.class);
-        myService.createCacheDemo();
-        myService.cachedDemo();
-    }
+  public static void main(String[] args) {
+    ConfigurableApplicationContext context = SpringApplication.run(SpringBootApp.class);
+    MyService myService = context.getBean(MyService.class);
+    //myService.createCacheDemo();
+    myService.cachedDemo();
+  }
 }
